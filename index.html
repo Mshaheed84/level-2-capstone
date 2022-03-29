@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <form name="todos">
+        <input type="text" placeholder="Item Name" name="title" >
+        <input type="text" placeholder="Description" name="description">
+        <input type="text" placeholder="imgUrl" name="imgUrl">
+        
+        Is this item completed (check for yes): <input type="checkbox" name="completed">
+        <button name="add">Submit</button>
+        <button name="delete" id="delete">Delete</button>
+    </form>
+    <div>
+        <ul id="todoList"></ul>
+        
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
